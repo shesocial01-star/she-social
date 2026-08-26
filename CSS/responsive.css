@@ -1,0 +1,1006 @@
+<<<<<<< HEAD
+/* =========================================================
+   SHE SOCIAL — RESPONSIVE
+   ========================================================= */
+
+
+/* =========================================================
+   TABLETTES
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .container {
+        width: min(100% - 32px, 1000px);
+    }
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-menu a {
+        font-size: 13px;
+    }
+
+    .navbar .btn {
+        padding: 0 18px;
+        font-size: 13px;
+    }
+
+    .hero-container {
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .hero-logo-container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .hero-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-one {
+        width: 370px;
+        height: 370px;
+    }
+
+    .circle-two {
+        width: 440px;
+        height: 440px;
+    }
+
+    .about-grid {
+        gap: 50px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   TABLETTE / PETIT ÉCRAN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar-container {
+        min-height: 78px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-expertise {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 470px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .about-visual {
+        min-height: 430px;
+    }
+
+    .about-content {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+
+/* =========================================================
+   TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: min(100% - 28px, 100%);
+    }
+
+    .about-section,
+    .team-section,
+    .services-section,
+    .portfolio-section,
+    .why-section {
+        padding: 75px 0;
+    }
+
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
+    .navbar-container {
+        min-height: 70px;
+    }
+
+    .logo img {
+        width: 62px;
+        height: 62px;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        margin-top: 22px;
+
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-top: 28px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-expertise {
+        gap: 8px;
+
+        margin-top: 30px;
+
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .hero-visual {
+        min-height: 340px;
+    }
+
+    .hero-logo-container {
+        width: 210px;
+        height: 210px;
+    }
+
+    .hero-logo {
+        width: 155px;
+        height: 155px;
+    }
+
+    .circle-one {
+        width: 280px;
+        height: 280px;
+    }
+
+    .circle-two {
+        width: 330px;
+        height: 330px;
+    }
+
+    .hero-decoration {
+        width: 55px;
+        height: 55px;
+    }
+
+    .decoration-one {
+        top: 35px;
+        right: 15px;
+    }
+
+    .decoration-two {
+        bottom: 35px;
+        left: 15px;
+
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* =========================
+       TITRES
+       ========================= */
+
+    .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .section-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+    .section-intro {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       À PROPOS
+       ========================= */
+
+    .about-visual {
+        min-height: 360px;
+    }
+
+    .about-card {
+        width: 280px;
+        min-height: 330px;
+
+        padding: 25px;
+    }
+
+    .about-logo-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-logo-circle img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .about-card-title {
+        font-size: 24px;
+    }
+
+    .about-content h3 {
+        font-size: 32px;
+    }
+
+    .about-content > p:not(.about-kicker) {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       STATISTIQUES
+       ========================= */
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item,
+    .stat-item:nth-child(2) {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+
+    .stat-item strong {
+        font-size: 36px;
+    }
+
+
+    /* =========================
+       ÉQUIPE
+       ========================= */
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-image {
+        height: 390px;
+    }
+
+    .team-info h3 {
+        font-size: 23px;
+    }
+
+
+    /* =========================
+       SERVICES
+       ========================= */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+    .service-content {
+        margin-top: 35px;
+    }
+
+    .service-content h3 {
+        font-size: 25px;
+    }
+
+
+    /* =========================
+       PORTFOLIO
+       ========================= */
+
+    .portfolio-message {
+        padding: 45px 22px;
+    }
+
+    .portfolio-message h3 {
+        font-size: 34px;
+    }
+
+    .portfolio-message > p:not(.portfolio-message-label) {
+        font-size: 14px;
+    }
+
+    .portfolio-message .btn {
+        width: 100%;
+    }
+
+
+    /* =========================
+       POURQUOI NOUS
+       ========================= */
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-card {
+        padding: 28px 22px;
+    }
+
+    .why-card h3 {
+        font-size: 23px;
+    }
+
+    .why-bottom {
+        margin-top: 45px;
+    }
+
+    .why-bottom p {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================================================
+   TRÈS PETITS TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .hero-logo-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .circle-one {
+        width: 240px;
+        height: 240px;
+    }
+
+    .circle-two {
+        width: 285px;
+        height: 285px;
+    }
+
+    .about-card {
+        width: 250px;
+    }
+
+    .team-image {
+        height: 330px;
+    }
+=======
+/* =========================================================
+   SHE SOCIAL — RESPONSIVE
+   ========================================================= */
+
+
+/* =========================================================
+   TABLETTES
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .container {
+        width: min(100% - 32px, 1000px);
+    }
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-menu a {
+        font-size: 13px;
+    }
+
+    .navbar .btn {
+        padding: 0 18px;
+        font-size: 13px;
+    }
+
+    .hero-container {
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .hero-logo-container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .hero-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-one {
+        width: 370px;
+        height: 370px;
+    }
+
+    .circle-two {
+        width: 440px;
+        height: 440px;
+    }
+
+    .about-grid {
+        gap: 50px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   TABLETTE / PETIT ÉCRAN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar-container {
+        min-height: 78px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-expertise {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 470px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .about-visual {
+        min-height: 430px;
+    }
+
+    .about-content {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+
+/* =========================================================
+   TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: min(100% - 28px, 100%);
+    }
+
+    .about-section,
+    .team-section,
+    .services-section,
+    .portfolio-section,
+    .why-section {
+        padding: 75px 0;
+    }
+
+
+    /* =========================
+       NAVIGATION
+       ========================= */
+
+    .navbar-container {
+        min-height: 70px;
+    }
+
+    .logo img {
+        width: 62px;
+        height: 62px;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        margin-top: 22px;
+
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+
+        margin-top: 28px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-expertise {
+        gap: 8px;
+
+        margin-top: 30px;
+
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .hero-visual {
+        min-height: 340px;
+    }
+
+    .hero-logo-container {
+        width: 210px;
+        height: 210px;
+    }
+
+    .hero-logo {
+        width: 155px;
+        height: 155px;
+    }
+
+    .circle-one {
+        width: 280px;
+        height: 280px;
+    }
+
+    .circle-two {
+        width: 330px;
+        height: 330px;
+    }
+
+    .hero-decoration {
+        width: 55px;
+        height: 55px;
+    }
+
+    .decoration-one {
+        top: 35px;
+        right: 15px;
+    }
+
+    .decoration-two {
+        bottom: 35px;
+        left: 15px;
+
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* =========================
+       TITRES
+       ========================= */
+
+    .section-heading {
+        margin-bottom: 45px;
+    }
+
+    .section-label {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+    .section-intro {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       À PROPOS
+       ========================= */
+
+    .about-visual {
+        min-height: 360px;
+    }
+
+    .about-card {
+        width: 280px;
+        min-height: 330px;
+
+        padding: 25px;
+    }
+
+    .about-logo-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-logo-circle img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .about-card-title {
+        font-size: 24px;
+    }
+
+    .about-content h3 {
+        font-size: 32px;
+    }
+
+    .about-content > p:not(.about-kicker) {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       STATISTIQUES
+       ========================= */
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item,
+    .stat-item:nth-child(2) {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+
+    .stat-item strong {
+        font-size: 36px;
+    }
+
+
+    /* =========================
+       ÉQUIPE
+       ========================= */
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-image {
+        height: 390px;
+    }
+
+    .team-info h3 {
+        font-size: 23px;
+    }
+
+
+    /* =========================
+       SERVICES
+       ========================= */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+    .service-content {
+        margin-top: 35px;
+    }
+
+    .service-content h3 {
+        font-size: 25px;
+    }
+
+
+    /* =========================
+       PORTFOLIO
+       ========================= */
+
+    .portfolio-message {
+        padding: 45px 22px;
+    }
+
+    .portfolio-message h3 {
+        font-size: 34px;
+    }
+
+    .portfolio-message > p:not(.portfolio-message-label) {
+        font-size: 14px;
+    }
+
+    .portfolio-message .btn {
+        width: 100%;
+    }
+
+
+    /* =========================
+       POURQUOI NOUS
+       ========================= */
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-card {
+        padding: 28px 22px;
+    }
+
+    .why-card h3 {
+        font-size: 23px;
+    }
+
+    .why-bottom {
+        margin-top: 45px;
+    }
+
+    .why-bottom p {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================================================
+   TRÈS PETITS TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .hero-logo-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .circle-one {
+        width: 240px;
+        height: 240px;
+    }
+
+    .circle-two {
+        width: 285px;
+        height: 285px;
+    }
+
+    .about-card {
+        width: 250px;
+    }
+
+    .team-image {
+        height: 330px;
+    }
+>>>>>>> 699056b (Mise à jour équipe She Social)
+}

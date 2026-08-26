@@ -1,0 +1,620 @@
+<<<<<<< HEAD
+/* =========================================================
+   SHE SOCIAL — ANIMATIONS
+   ========================================================= */
+
+
+/* =========================================================
+   1. APPARITION GÉNÉRALE
+   ========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================================
+   2. ANIMATION HERO
+   ========================================================= */
+
+.hero-content {
+    animation: fadeRight 0.9s ease both;
+}
+
+.hero-visual {
+    animation: fadeLeft 1s ease 0.15s both;
+}
+
+.hero-expertise {
+    animation: fadeUp 0.8s ease 0.5s both;
+}
+
+
+/* =========================================================
+   3. LOGO HERO
+   ========================================================= */
+
+.hero-logo-container {
+    animation: heroLogoAppear 1s ease both;
+}
+
+@keyframes heroLogoAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   4. CERCLES HERO
+   ========================================================= */
+
+.circle-one {
+    animation: rotateSlow 20s linear infinite;
+}
+
+.circle-two {
+    animation: rotateSlowReverse 28s linear infinite;
+}
+
+@keyframes rotateSlow {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateSlowReverse {
+
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* =========================================================
+   5. DÉCORATIONS
+   ========================================================= */
+
+.decoration-one {
+    animation: floatDecoration 5s ease-in-out infinite;
+}
+
+.decoration-two {
+    animation: floatDecoration 6s ease-in-out infinite reverse;
+}
+
+@keyframes floatDecoration {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(55deg);
+    }
+}
+
+
+/* =========================================================
+   6. CARTES
+   ========================================================= */
+
+.team-card,
+.service-card,
+.why-card {
+    will-change: transform;
+}
+
+
+/* =========================================================
+   7. BOUTONS
+   ========================================================= */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 80%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+.btn:hover::before {
+    left: 130%;
+}
+
+
+/* =========================================================
+   8. LIENS
+   ========================================================= */
+
+.about-link,
+.service-link {
+    transition: transform 0.3s ease;
+}
+
+.about-link:hover,
+.service-link:hover {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   9. ANIMATION LOGO ABOUT
+   ========================================================= */
+
+.about-logo-circle {
+    transition: transform 0.5s ease;
+}
+
+.about-card:hover .about-logo-circle {
+    transform: rotate(5deg) scale(1.04);
+}
+
+
+/* =========================================================
+   10. ANIMATION IMAGES ÉQUIPE
+   ========================================================= */
+
+.team-image {
+    overflow: hidden;
+}
+
+.team-image img {
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   11. ANIMATION ICÔNES
+   ========================================================= */
+
+.service-icon,
+.why-icon {
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(10deg) scale(1.08);
+}
+
+.why-card:hover .why-icon {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+
+/* =========================================================
+   12. ANIMATION CARTES
+   ========================================================= */
+
+.team-card,
+.service-card,
+.why-card {
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   13. ACCESSIBILITÉ
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+=======
+/* =========================================================
+   SHE SOCIAL — ANIMATIONS
+   ========================================================= */
+
+
+/* =========================================================
+   1. APPARITION GÉNÉRALE
+   ========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeLeft {
+
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================================
+   2. ANIMATION HERO
+   ========================================================= */
+
+.hero-content {
+    animation: fadeRight 0.9s ease both;
+}
+
+.hero-visual {
+    animation: fadeLeft 1s ease 0.15s both;
+}
+
+.hero-expertise {
+    animation: fadeUp 0.8s ease 0.5s both;
+}
+
+
+/* =========================================================
+   3. LOGO HERO
+   ========================================================= */
+
+.hero-logo-container {
+    animation: heroLogoAppear 1s ease both;
+}
+
+@keyframes heroLogoAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   4. CERCLES HERO
+   ========================================================= */
+
+.circle-one {
+    animation: rotateSlow 20s linear infinite;
+}
+
+.circle-two {
+    animation: rotateSlowReverse 28s linear infinite;
+}
+
+@keyframes rotateSlow {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateSlowReverse {
+
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* =========================================================
+   5. DÉCORATIONS
+   ========================================================= */
+
+.decoration-one {
+    animation: floatDecoration 5s ease-in-out infinite;
+}
+
+.decoration-two {
+    animation: floatDecoration 6s ease-in-out infinite reverse;
+}
+
+@keyframes floatDecoration {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(55deg);
+    }
+}
+
+
+/* =========================================================
+   6. CARTES
+   ========================================================= */
+
+.team-card,
+.service-card,
+.why-card {
+    will-change: transform;
+}
+
+
+/* =========================================================
+   7. BOUTONS
+   ========================================================= */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 80%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+.btn:hover::before {
+    left: 130%;
+}
+
+
+/* =========================================================
+   8. LIENS
+   ========================================================= */
+
+.about-link,
+.service-link {
+    transition: transform 0.3s ease;
+}
+
+.about-link:hover,
+.service-link:hover {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   9. ANIMATION LOGO ABOUT
+   ========================================================= */
+
+.about-logo-circle {
+    transition: transform 0.5s ease;
+}
+
+.about-card:hover .about-logo-circle {
+    transform: rotate(5deg) scale(1.04);
+}
+
+
+/* =========================================================
+   10. ANIMATION IMAGES ÉQUIPE
+   ========================================================= */
+
+.team-image {
+    overflow: hidden;
+}
+
+.team-image img {
+    transition:
+        transform 0.6s ease,
+        filter 0.6s ease;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   11. ANIMATION ICÔNES
+   ========================================================= */
+
+.service-icon,
+.why-icon {
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(10deg) scale(1.08);
+}
+
+.why-card:hover .why-icon {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+
+/* =========================================================
+   12. ANIMATION CARTES
+   ========================================================= */
+
+.team-card,
+.service-card,
+.why-card {
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   13. ACCESSIBILITÉ
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+>>>>>>> 699056b (Mise à jour équipe She Social)
+}

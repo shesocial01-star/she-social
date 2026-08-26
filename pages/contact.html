@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contactez SHE SOCIAL, agence de communication digitale créative à Dakar."
+    >
+
+    <title>Contact | SHE SOCIAL</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <link rel="stylesheet" href="../CSS/responsive.css">
+
+    <link rel="stylesheet" href="../CSS/animations.css">
+
+
+    <!-- =====================================================
+         STYLE SPÉCIFIQUE CONTACT
+    ====================================================== -->
+
+    <style>
+
+        /* =====================================================
+           PAGE CONTACT
+        ====================================================== */
+
+        .contact-page {
+            background: var(--warm-white);
+        }
+
+
+        /* =====================================================
+           HERO CONTACT
+        ====================================================== */
+
+        .contact-hero {
+
+            padding: 100px 0 80px;
+
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(232, 198, 163, 0.35),
+                    transparent 30%
+                ),
+                var(--warm-white);
+        }
+
+
+        .contact-hero h1 {
+
+            max-width: 850px;
+
+            margin: 0 auto;
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(45px, 6vw, 72px);
+
+            line-height: 1.08;
+
+            font-weight: 600;
+
+            letter-spacing: -2px;
+        }
+
+
+        .contact-hero h1 span {
+            color: var(--terracotta);
+        }
+
+
+        .contact-hero p:not(.section-label) {
+
+            max-width: 700px;
+
+            margin: 25px auto 0;
+
+            color: var(--text-light);
+
+            font-size: 17px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           SECTION CONTACT
+        ====================================================== */
+
+        .contact-section {
+
+            width: 100%;
+
+            padding: 20px 0 110px;
+        }
+
+
+        .contact-section .container {
+
+            width: min(100% - 40px, 1180px);
+
+            margin: 0 auto;
+        }
+
+
+        /* =====================================================
+           GRILLE
+        ====================================================== */
+
+        .contact-grid {
+
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 0.9fr)
+                minmax(0, 1.1fr);
+
+            gap: 35px;
+
+            align-items: stretch;
+        }
+
+
+        .contact-info,
+        .contact-form-box {
+
+            width: 100%;
+
+            min-width: 0;
+        }
+
+
+        /* =====================================================
+           INFORMATIONS
+        ====================================================== */
+
+        .contact-info {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 50px;
+
+            border-radius: var(--radius-large);
+
+            background: var(--brown);
+
+            color: var(--white);
+
+            box-shadow: var(--shadow-medium);
+        }
+
+
+        .contact-info::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 260px;
+
+            height: 260px;
+
+            top: -100px;
+
+            right: -100px;
+
+            border: 1px solid
+                rgba(232, 198, 163, 0.25);
+
+            border-radius: 50%;
+        }
+
+
+        .contact-info::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 170px;
+
+            height: 170px;
+
+            bottom: -80px;
+
+            left: -80px;
+
+            border: 1px solid
+                rgba(232, 198, 163, 0.18);
+
+            transform: rotate(25deg);
+        }
+
+
+        .contact-info-content {
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .contact-info .section-label {
+            color: var(--champagne);
+        }
+
+
+        .contact-info h2 {
+
+            max-width: 430px;
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(34px, 4vw, 48px);
+
+            line-height: 1.15;
+
+            font-weight: 600;
+        }
+
+
+        .contact-info h2 span {
+            color: var(--champagne);
+        }
+
+
+        .contact-description {
+
+            margin-top: 20px;
+
+            color: rgba(255, 255, 255, 0.72);
+
+            font-size: 15px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           COORDONNÉES
+        ====================================================== */
+
+        .contact-details {
+
+            display: grid;
+
+            gap: 18px;
+
+            margin-top: 42px;
+        }
+
+
+        .contact-detail {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 16px;
+
+            padding-bottom: 18px;
+
+            border-bottom:
+                1px solid
+                rgba(255, 255, 255, 0.12);
+        }
+
+
+        .contact-detail:last-child {
+            border-bottom: none;
+        }
+
+
+        .contact-icon {
+
+            width: 42px;
+
+            height: 42px;
+
+            flex-shrink: 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 255, 255, 0.08);
+
+            color: var(--champagne);
+
+            font-size: 17px;
+        }
+
+
+        .contact-detail-label {
+
+            display: block;
+
+            margin-bottom: 3px;
+
+            color: var(--champagne);
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        .contact-detail a,
+        .contact-detail p {
+
+            color: var(--white);
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+
+        .contact-detail a:hover {
+            color: var(--champagne);
+        }
+
+
+        /* =====================================================
+           RÉSEAUX SOCIAUX
+        ====================================================== */
+
+        .contact-social {
+            margin-top: 35px;
+        }
+
+
+        .contact-social-title {
+
+            margin-bottom: 14px;
+
+            color: var(--champagne);
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+        }
+
+
+        .social-links {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+
+        .social-links a {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 38px;
+
+            padding: 9px 15px;
+
+            border: 1px solid
+                rgba(255, 255, 255, 0.15);
+
+            border-radius: 999px;
+
+            color: var(--white);
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            transition: var(--transition);
+        }
+
+
+        .social-links a:hover {
+
+            background: var(--terracotta);
+
+            border-color: var(--terracotta);
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           FORMULAIRE
+        ====================================================== */
+
+        .contact-form-box {
+
+            padding: 50px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: var(--radius-large);
+
+            background: var(--white);
+
+            box-shadow: var(--shadow-soft);
+        }
+
+
+        .contact-form-header {
+            margin-bottom: 35px;
+        }
+
+
+        .contact-form-header .section-label {
+            margin-bottom: 12px;
+        }
+
+
+        .contact-form-header h2 {
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(32px, 4vw, 45px);
+
+            line-height: 1.15;
+        }
+
+
+        .contact-form-header p {
+
+            margin-top: 12px;
+
+            color: var(--text-light);
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           FORMULAIRE — GRILLE
+        ====================================================== */
+
+        .form-grid {
+
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr)
+                minmax(0, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .form-group {
+
+            min-width: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 8px;
+        }
+
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+
+        .form-group label {
+
+            color: var(--brown);
+
+            font-size: 12px;
+
+            font-weight: 700;
+        }
+
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+
+            width: 100%;
+
+            max-width: 100%;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 12px;
+
+            background: var(--warm-white);
+
+            color: var(--brown);
+
+            font-family: "DM Sans", sans-serif;
+
+            font-size: 14px;
+
+            outline: none;
+
+            transition: var(--transition);
+        }
+
+
+        .form-group input,
+        .form-group select {
+
+            height: 52px;
+
+            padding: 0 16px;
+        }
+
+
+        .form-group textarea {
+
+            min-height: 150px;
+
+            padding: 15px 16px;
+
+            resize: vertical;
+        }
+
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+
+            border-color: var(--terracotta);
+
+            background: var(--white);
+
+            box-shadow:
+                0 0 0 4px
+                rgba(201, 104, 61, 0.08);
+        }
+
+
+        /* =====================================================
+           BOUTON
+        ====================================================== */
+
+        .form-submit {
+            margin-top: 25px;
+        }
+
+
+        .form-submit .btn {
+
+            min-width: 230px;
+
+            border: none;
+
+            cursor: pointer;
+        }
+
+
+        /* =====================================================
+           MESSAGE
+        ====================================================== */
+
+        .whatsapp-notice {
+
+            margin-top: 20px;
+
+            padding: 14px 16px;
+
+            border-radius: 12px;
+
+            background: var(--cream);
+
+            color: var(--text-light);
+
+            font-size: 12px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           SECTION FINALE
+        ====================================================== */
+
+        .contact-bottom {
+
+            padding: 80px 0;
+
+            background: var(--cream);
+
+            text-align: center;
+        }
+
+
+        .contact-bottom p {
+
+            color: var(--text-light);
+
+            font-size: 14px;
+        }
+
+
+        .contact-bottom h3 {
+
+            margin-top: 8px;
+
+            font-family: "Playfair Display", serif;
+
+            font-size: clamp(25px, 4vw, 36px);
+        }
+
+
+        .contact-bottom h3 span {
+            color: var(--terracotta);
+        }
+
+
+        /* =====================================================
+           TABLETTE
+        ====================================================== */
+
+        @media (max-width: 900px) {
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .contact-info,
+            .contact-form-box {
+                padding: 40px;
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 600px) {
+
+            .contact-hero {
+                padding: 70px 0 50px;
+            }
+
+
+            .contact-hero h1 {
+
+                font-size: 42px;
+
+                letter-spacing: -1px;
+            }
+
+
+            .contact-hero p:not(.section-label) {
+                font-size: 15px;
+            }
+
+
+            .contact-section {
+                padding: 20px 0 75px;
+            }
+
+
+            .contact-section .container {
+
+                width: min(100% - 28px, 100%);
+            }
+
+
+            .contact-info,
+            .contact-form-box {
+
+                padding: 28px 22px;
+
+                border-radius: 22px;
+            }
+
+
+            .contact-info h2 {
+                font-size: 34px;
+            }
+
+
+            .form-grid {
+
+                grid-template-columns: 1fr;
+
+                gap: 18px;
+            }
+
+
+            .form-group.full {
+                grid-column: auto;
+            }
+
+
+            .form-submit .btn {
+                width: 100%;
+            }
+
+
+            .social-links {
+                gap: 8px;
+            }
+
+
+            .social-links a {
+
+                padding: 8px 13px;
+
+                font-size: 11px;
+            }
+
+        }
+
+
+        /* =====================================================
+           TRÈS PETITS ÉCRANS
+        ====================================================== */
+
+        @media (max-width: 380px) {
+
+            .contact-hero h1 {
+                font-size: 36px;
+            }
+
+
+            .contact-info,
+            .contact-form-box {
+                padding: 24px 18px;
+            }
+
+
+            .contact-info h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="contact-page">
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+
+            <!-- LOGO -->
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+
+                <img
+                    src="../images/logo.jpg"
+                    alt="Logo SHE SOCIAL"
+                >
+
+            </a>
+
+
+            <!-- MENU -->
+
+            <nav class="nav-menu">
+
+                <a href="../index.html">
+                    Accueil
+                </a>
+
+                <a href="about.html">
+                    À propos
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="portfolio.html">
+                    Réalisations
+                </a>
+
+                <a href="team.html">
+                    Équipe
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="active"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- BOUTON DEVIS -->
+
+            <a
+                href="contact.html"
+                class="btn btn-primary"
+            >
+                Demander un devis
+            </a>
+
+
+            <!-- MENU MOBILE -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTENU PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="contact-hero">
+
+            <div class="container">
+
+                <p class="section-label">
+                    CONTACT
+                </p>
+
+
+                <h1>
+
+                    Parlons de votre
+
+                    <span>
+                        projet.
+                    </span>
+
+                </h1>
+
+
+                <p>
+
+                    Une idée, un besoin ou simplement envie
+                    d'échanger ? L'équipe SHE SOCIAL est à votre
+                    écoute pour vous accompagner dans le
+                    développement de votre présence digitale.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECTION CONTACT
+        ================================================== -->
+
+        <section class="contact-section">
+
+            <div class="container">
+
+                <div class="contact-grid">
+
+
+                    <!-- =========================================
+                         INFORMATIONS
+                    ========================================== -->
+
+                    <div class="contact-info">
+
+                        <div class="contact-info-content">
+
+                            <p class="section-label">
+                                ÉCHANGEONS
+                            </p>
+
+
+                            <h2>
+
+                                Créons quelque chose
+
+                                <span>
+                                    de remarquable.
+                                </span>
+
+                            </h2>
+
+
+                            <p class="contact-description">
+
+                                Que vous soyez entrepreneur, petite
+                                entreprise, boutique, marque, restaurant,
+                                startup ou entreprise de services, nous
+                                pouvons vous accompagner dans votre
+                                communication digitale.
+
+                            </p>
+
+
+                            <!-- COORDONNÉES -->
+
+                            <div class="contact-details">
+
+
+                                <!-- EMAIL -->
+
+                                <div class="contact-detail">
+
+                                    <div class="contact-icon">
+                                        ✉
+                                    </div>
+
+                                    <div>
+
+                                        <span class="contact-detail-label">
+                                            Email
+                                        </span>
+
+                                        <a href="mailto:shesocial01@gmail.com">
+                                            shesocial01@gmail.com
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- LOCALISATION -->
+
+                                <div class="contact-detail">
+
+                                    <div class="contact-icon">
+                                        ●
+                                    </div>
+
+                                    <div>
+
+                                        <span class="contact-detail-label">
+                                            Localisation
+                                        </span>
+
+                                        <p>
+                                            Dakar, Sénégal
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- WHATSAPP -->
+
+                                <div class="contact-detail">
+
+                                    <div class="contact-icon">
+                                        ◇
+                                    </div>
+
+                                    <div>
+
+                                        <span class="contact-detail-label">
+                                            WhatsApp
+                                        </span>
+
+                                        <p>
+                                            WhatsApp professionnel —
+                                            bientôt disponible
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- RÉSEAUX SOCIAUX -->
+
+                            <div class="contact-social">
+
+                                <p class="contact-social-title">
+                                    SUIVEZ-NOUS
+                                </p>
+
+
+                                <div class="social-links">
+
+
+                                    <a
+                                        href="https://www.instagram.com/shesocial01?igsh=MTdma3VqajIxaDhudg"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Instagram
+                                    </a>
+
+
+                                    <a
+                                        href="https://www.facebook.com/profile.php?id=61592886960462"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Facebook
+                                    </a>
+
+
+                                    <a
+                                        href="https://www.tiktok.com/@shesocial01"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        TikTok
+                                    </a>
+
+
+                                    <a
+                                        href="https://www.linkedin.com/in/she-social-ab3628428/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        LinkedIn
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =========================================
+                         FORMULAIRE
+                    ========================================== -->
+
+                    <div class="contact-form-box">
+
+
+                        <div class="contact-form-header">
+
+                            <p class="section-label">
+                                VOTRE PROJET
+                            </p>
+
+
+                            <h2>
+                                Demander un devis
+                            </h2>
+
+
+                            <p>
+
+                                Présentez-nous votre projet et quelques
+                                informations essentielles. Nous reviendrons
+                                vers vous pour échanger sur vos besoins.
+
+                            </p>
+
+                        </div>
+
+
+                        <!-- FORMULAIRE -->
+
+                        <form id="contactForm">
+
+
+                            <div class="form-grid">
+
+
+                                <!-- NOM -->
+
+                                <div class="form-group">
+
+                                    <label for="name">
+                                        Nom complet
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="nom"
+                                        placeholder="Votre nom et prénom"
+                                        autocomplete="name"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <!-- EMAIL -->
+
+                                <div class="form-group">
+
+                                    <label for="email">
+                                        Adresse email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="votre@email.com"
+                                        autocomplete="email"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <!-- TÉLÉPHONE -->
+
+                                <div class="form-group">
+
+                                    <label for="phone">
+                                        Téléphone
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="telephone"
+                                        placeholder="+221 XX XXX XX XX"
+                                        autocomplete="tel"
+                                    >
+
+                                </div>
+
+
+                                <!-- SERVICE -->
+
+                                <div class="form-group">
+
+                                    <label for="service">
+                                        Service souhaité
+                                    </label>
+
+                                    <select
+                                        id="service"
+                                        name="service"
+                                        required
+                                    >
+
+                                        <option
+                                            value=""
+                                            selected
+                                            disabled
+                                        >
+                                            Sélectionner un service
+                                        </option>
+
+                                        <option value="Community Management">
+                                            Community Management
+                                        </option>
+
+                                        <option value="Création graphique et identité visuelle">
+                                            Création graphique & identité visuelle
+                                        </option>
+
+                                        <option value="Photo et Vidéo">
+                                            Photo & Vidéo
+                                        </option>
+
+                                        <option value="Stratégie et Communication digitale">
+                                            Stratégie & Communication digitale
+                                        </option>
+
+                                        <option value="Création de sites web">
+                                            Création de sites web
+                                        </option>
+
+                                        <option value="Accompagnement et Conseil digital">
+                                            Accompagnement & Conseil digital
+                                        </option>
+
+                                        <option value="Autre projet">
+                                            Autre projet
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <!-- MESSAGE -->
+
+                                <div class="form-group full">
+
+                                    <label for="message">
+                                        Message / Présentation du projet
+                                    </label>
+
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        placeholder="Parlez-nous de votre projet, vos objectifs et vos besoins..."
+                                        required
+                                    ></textarea>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- BOUTON -->
+
+                            <div class="form-submit">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >
+
+                                    Envoyer ma demande
+
+                                    <span>
+                                        →
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+
+                            <!-- MESSAGE -->
+
+                            <div class="whatsapp-notice">
+
+                                WhatsApp professionnel —
+                                bientôt disponible.
+
+                                Pour le moment, vous pouvez nous
+                                contacter directement par email.
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECTION FINALE
+        ================================================== -->
+
+        <section class="contact-bottom">
+
+            <div class="container">
+
+                <p>
+                    SHE SOCIAL — Agence de communication digitale
+                </p>
+
+
+                <h3>
+
+                    4 femmes.
+
+                    <span>
+                        4 expertises.
+                    </span>
+
+                    Une même vision.
+
+                </h3>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FIREBASE / FIRESTORE
+    ====================================================== -->
+
+    <script type="module">
+
+        import { initializeApp }
+            from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
+
+        import {
+            getFirestore,
+            collection,
+            addDoc
+        }
+        from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
+
+
+        /* =====================================================
+           CONFIGURATION FIREBASE
+        ====================================================== */
+
+        const firebaseConfig = {
+
+            apiKey: "AIzaSyBh7oJGXohAcCCShhmcNM6dpZyu9k0f6r4",
+
+            authDomain: "she-social.firebaseapp.com",
+
+            projectId: "she-social",
+
+            storageBucket: "she-social.firebasestorage.app",
+
+            messagingSenderId: "28874852322",
+
+            appId: "1:28874852322:web:f9d0726839f1a8e7c85bbb"
+
+        };
+
+
+        /* =====================================================
+           INITIALISATION FIREBASE
+        ====================================================== */
+
+        const app = initializeApp(firebaseConfig);
+
+        const db = getFirestore(app);
+
+
+        /* =====================================================
+           FORMULAIRE
+        ====================================================== */
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+
+        if (contactForm) {
+
+            contactForm.addEventListener(
+                "submit",
+                async function (event) {
+
+                    event.preventDefault();
+
+
+                    const nom =
+                        document.getElementById("name").value.trim();
+
+                    const email =
+                        document.getElementById("email").value.trim();
+
+                    const telephone =
+                        document.getElementById("phone").value.trim();
+
+                    const service =
+                        document.getElementById("service").value;
+
+                    const message =
+                        document.getElementById("message").value.trim();
+
+
+                    /* =================================================
+                       VÉRIFICATION
+                    ================================================== */
+
+                    if (!nom || !email || !service || !message) {
+
+                        alert(
+                            "Veuillez remplir tous les champs obligatoires."
+                        );
+
+                        return;
+                    }
+
+
+                    try {
+
+                        /* =================================================
+                           ENREGISTREMENT FIRESTORE
+                        ================================================== */
+
+                        await addDoc(
+                            collection(db, "contacts"),
+                            {
+
+                                nom: nom,
+
+                                email: email,
+
+                                telephone: telephone,
+
+                                service: service,
+
+                                message: message,
+
+                                date: new Date()
+
+                            }
+                        );
+
+
+                        /* =================================================
+                           SUCCÈS
+                        ================================================== */
+
+                        alert(
+                            "Merci ! Votre demande a bien été envoyée."
+                        );
+
+
+                        contactForm.reset();
+
+
+                    } catch (error) {
+
+                        console.error(
+                            "Erreur Firebase :",
+                            error
+                        );
+
+
+                        alert(
+                            "Une erreur est survenue. Veuillez réessayer."
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+
+    </script>
+
+
+    <!-- =====================================================
+         JAVASCRIPT PRINCIPAL
+    ====================================================== -->
+
+    <script src="../JS/script.js"></script>
+
+
+</body>
+
+</html>
